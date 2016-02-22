@@ -1,0 +1,16 @@
+
+/*
+ Theme Name:   OnePress Child
+ Theme URI:    http://example.com/
+ Description:  OnePress Child Theme
+ Author:       Grupp CMS
+ Author URI:   http://example.com
+ Template:     onepress
+ Version:      1.0.0
+*/
+
+.onepress-menu ul ul {
+    top: 0;
+    left: -102%;
+}
+
