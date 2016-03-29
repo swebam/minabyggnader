@@ -14,9 +14,9 @@ Version: 1.0
 // plugin function
 function dirDataToJs() {
 	//
-	$dir_in_uploads = 'buildings'; // <- CONFIG
+	$dir_in_uploads = '/buildings'; // <- CONFIG
 	// (I should build an admin options panel for this..)
-  $path = wp_upload_dir(); 
+  $path = wp_upload_dir();
   $json = json_encode(dirDataToJs_navigateFiles($path['basedir'] . '/' . $dir_in_uploads));
   print("<script> var dirData = " . $json . "; </script>");
 }
@@ -67,13 +67,13 @@ function dirDataToJs_dressStructure($arr, $prevPath = ''){
 		if(is_array($v)){
 			$path = $prevPath . '/' . $k;
 			$newArr[] = array(
-				'filename' => $k, 
-				'path' => $path, 
+				'filename' => $k,
+				'path' => $path,
 				'children' => dirDataToJs_dressStructure($v, $path)
 			);
 		}else{
 			$newArr[] = array(
-				'filename' => $v, 
+				'filename' => $v,
 				'path' => $prevPath . '/' . $v
 			);
 		}
