@@ -14,15 +14,20 @@
     left: -102%;
 }
 
-@media screen and (max-width: 1140px)
+a.site-text-logo {
+    color: #225378;
+}
+
+@media screen and (max-width: 1140px){
 .onepress-menu.onepress-menu-mobile ul {
     display: block;
+}
+
+.onepress-menu.onepress-menu-mobile li {
+    width: 100%;
 }
 
 .onepress-menu.onepress-menu-mobile a {
     border-right: 0px;
 }
-
-.onepress-menu.onepress-menu-mobile li {
-    width: 100% !important;
 }
