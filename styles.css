@@ -9,8 +9,43 @@
  Version:      1.0.0
 */
 
+.site-branding a.site-text-logo {
+    color: #ffffff;
+}
+
+.onepress-menu a {
+		color: #ffffff;
+}
+
+.onepress-menu ul li a {
+	text-align: center;
+	background: #3D7E9B;
+	color: #fff;
+}
+
 .onepress-menu ul ul {
     top: 0;
     left: -102%;
+}
+
+
+
+@media screen and (max-width: 1140px){
+		.onepress-menu.onepress-menu-mobile ul {
+		    display: block;
+		}
+
+		.onepress-menu.onepress-menu-mobile li {
+		    width: 100%;
+		}
+
+		.onepress-menu.onepress-menu-mobile a {
+		    border-right: 0px;
+		}
+}
+
+#masthead.site-header {
+	background-color: #34495E;
+	color: #fff;
 }
 
